@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbRoute = "mongodb://jelo:a9bc839993@ds151382.mlab.com:51382/jelotest";
+const dbRoute = "mongodb://root:co10gb89@jello-r2aaa.mongodb.net/test?retryWrites=true";
 
 mongoose.connect(
     dbRoute,

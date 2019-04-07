@@ -1,16 +1,27 @@
 {
   "name": "mern_fs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
     "create-react-app": "^2.1.8"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbhoot/MERN_fs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gbhoot/MERN_fs/issues"
+  },
+  "homepage": "https://github.com/gbhoot/MERN_fs#readme",
+  "description": ""
 }
