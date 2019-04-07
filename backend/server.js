@@ -9,10 +9,11 @@ var app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'static'));
+app.use(express.static(path.join(__dirname, 'static')));
 
 require('./server/config/routes.js')(app);
 
-var server = app.listen(API_PORT, () => {
-    console.log('LISTENING ON PORT ${API_PORT}');
+app.listen(API_PORT, () => {
+    console.log('LISTENING ON PORT '+ API_PORT);
 });
+
